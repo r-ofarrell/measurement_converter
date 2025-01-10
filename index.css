@@ -4,7 +4,8 @@ body {
     font-family: Inter, arial;
 }
 
-.container {
+.container,
+.banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,6 +19,20 @@ body {
 }
 
 h1,
-.num-to-convert {
+#num-to-convert {
     color: white;
+}
+
+#num-to-convert {
+    background-color: #6943FF;
+    line-height: 85px;
+    width: 120px;
+    border: 1px solid #6943FF;
+    font-weight: 800;
+    font-size: 58px;
+    text-align: center;
+}
+
+#convert-btn {
+    margin-top: 25px;
 }
