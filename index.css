@@ -1,0 +1,23 @@
+html,
+body {
+    margin: 0;
+    font-family: Inter, arial;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    height: 285px;
+    width: 100%;
+    background-color: #6943FF;
+}
+
+h1,
+.num-to-convert {
+    color: white;
+}
