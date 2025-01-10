@@ -20,7 +20,7 @@ body {
 
 h1,
 #num-to-convert {
-    color: white;
+    color: #ffffff;
 }
 
 #num-to-convert {
@@ -33,6 +33,19 @@ h1,
     text-align: center;
 }
 
+#num-to-convert::placeholder {
+    color: white;
+}
+
 #convert-btn {
+    font-size: 16px;
+    font-weight: 400;
     margin-top: 25px;
+    width: 120px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.results {
+    text-align: center;
 }
