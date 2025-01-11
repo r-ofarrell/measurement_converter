@@ -2,7 +2,6 @@ html,
 body {
     margin: 0;
     font-family: Inter, arial;
-    height: 100%;
 }
 
 .container,
@@ -21,6 +20,10 @@ body {
     height: 285px;
     width: 100%;
     background-color: #6943FF;
+}
+
+h1 {
+    margin: 30px 50px;
 }
 
 h1,
@@ -62,5 +65,9 @@ h1,
     background-color: #FFFFFF;
     text-align: center;
     padding: 10px 0px;
-    margin-top: 10px;
+    margin: 25px;
+}
+
+.unit-label {
+    color: #5A537B;
 }

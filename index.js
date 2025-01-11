@@ -6,7 +6,7 @@ const kilogramsPounds = document.getElementById("kilograms-pounds");
 
 function convertMeasurement(convertTo) {
   function inputElValue(num) {
-    return (parseFloat(num) * convertTo).toFixed(2);
+    return (parseFloat(num) * convertTo).toFixed(3);
   }
   return inputElValue;
 }
@@ -29,10 +29,10 @@ function renderLength(num) {
   return `${num} meters = ${convertFromMetersToFeet(num)} feet | ${num} feet = ${convertFromFeetToMeters(num)} meters`;
 }
 function renderVolume(num) {
-  return `${num} liters = ${convertFromLitersToGallons(num)} gallons | ${num} gallons = ${convertFromGallonsToLiters(num)} meters`;
+  return `${num} liters = ${convertFromLitersToGallons(num)} gallons | ${num} gallons = ${convertFromGallonsToLiters(num)} liters`;
 }
 function renderMass(num) {
-  return `${num} kilos = ${convertFromKilosToPounds(num)} pounds | ${num} pounds = ${convertFromPoundsToKilos(num)} kilos`;
+  return `${num} kilograms = ${convertFromKilosToPounds(num)} pounds | ${num} pounds = ${convertFromPoundsToKilos(num)} kilograms`;
 }
 
 function render(inputEl) {
