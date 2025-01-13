@@ -72,6 +72,15 @@ h1,
   border-radius: 5px;
 }
 
+#convert-btn:hover,
+#convert-btn:focus,
+#mode-btn:hover,
+#mode-btn:focus {
+  transition: 300ms ease-in-out;
+  border: 1px solid black;
+  box-shadow: -5px 5px 5px black;
+}
+
 #results-section {
   height: 100%;
   width: 100%;
