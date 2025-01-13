@@ -23,12 +23,19 @@ body {
 }
 
 h1 {
-  margin: 30px 50px;
+  margin: 1.5rem 3rem;
 }
 
 h1,
+#num-to-convert-label,
 #num-to-convert {
   color: #ffffff;
+}
+
+#num-to-convert-label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: .75rem;
 }
 
 #mode-btn {
@@ -58,7 +65,7 @@ h1,
 #convert-btn {
   font-size: 1rem;
   font-weight: 400;
-  margin: 25px 0px;
+  margin: 1rem 0;
   width: 120px;
   padding: 10px;
   border: 1px solid #6943ff;
