@@ -1,8 +1,12 @@
+const modeBtn = document.getElementById("mode-btn")
 const numToConvert = document.getElementById("num-to-convert");
 const convertBtn = document.getElementById("convert-btn");
 const metersFeet = document.getElementById("meters-feet");
 const litersGallons = document.getElementById("liters-gallons");
 const kilogramsPounds = document.getElementById("kilograms-pounds");
+const resultsBackground = document.getElementById("results-section")
+
+let currentTheme = "light"
 
 function convertMeasurement(convertTo) {
   function inputElValue(num) {
@@ -48,4 +52,52 @@ function render(inputEl) {
   return "ok";
 }
 
+function switchTheme() {
+  if (currentTheme == "light") {
+    document.querySelectorAll("div.light-theme").forEach(el => toDarkTheme(el))
+    document.querySelectorAll("h2.light-label").forEach(el => toDarkLabel(el))
+    document.querySelectorAll("div.light-theme-background").forEach(el => toDarkBackground(el))
+    modeBtn.innerText = "Light mode"
+    currentTheme = "dark"
+  } else {
+    document.querySelectorAll("div.dark-theme").forEach(el => toLightTheme(el))
+    document.querySelectorAll("h2.dark-label").forEach(el => toLightLabel(el))
+    document.querySelectorAll("div.dark-theme-background").forEach(el => toLightBackground(el))
+    modeBtn.innerText = "Dark mode"
+    currentTheme = "light"
+  }
+}
+
+function toDarkLabel(el) {
+  el.classList.add("dark-label")
+  el.classList.remove("light-label")
+}
+
+function toLightLabel(el) {
+  el.classList.add("light-label")
+  el.classList.remove("dark-label")
+}
+
+function toDarkTheme(el) {
+  el.classList.add("dark-theme")
+  el.classList.remove("light-theme")
+}
+
+function toDarkBackground (el) {
+  el.classList.add("dark-theme-background")
+  el.classList.remove("light-theme-background")
+}
+
+function toLightTheme(el) {
+  el.classList.add("light-theme")
+  el.classList.remove("dark-theme")
+}
+
+function toLightBackground(el) {
+  el.classList.add("light-theme-background")
+  el.classList.remove("dark-theme-background")
+}
+
 convertBtn.addEventListener("click", () => render(numToConvert));
+
+modeBtn.addEventListener("click", () => switchTheme())

@@ -9,34 +9,33 @@
     <link rel="stylesheet" href="index.css" type="text/css" media="screen" />
     <script defer src="index.js" type="text/javascript"></script>
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <!-- Place favicon.ico in the root directory -->
   </head>
   <body>
     <div class="container">
       <div class="banner">
+        <button id="mode-btn">Dark mode</button>
         <h1>Metric/Imperial Unit Conversion</h1>
         <input
           id="num-to-convert"
           type="text"
           name="num"
           value=""
-          placeholder="0"
         />
         <button id="convert-btn">Convert</button>
       </div>
-      <div id="results-section">
-        <div class="results">
-          <h2 class="unit-label">Length (Meter/Feet)</h2>
+      <div id="results-section" class="light-theme-background">
+        <div class="results light-theme">
+          <h2 class="light-label">Length (Meter/Feet)</h2>
           <p id="meters-feet">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
         </div>
-        <div class="results">
-          <h2 class="unit-label">Volume (Liters/Gallons)</h2>
+        <div class="results light-theme">
+          <h2 class="light-label">Volume (Liters/Gallons)</h2>
           <p id="liters-gallons">
             0 liters = 0.000 gallons | 0 gallons = 0.000 liters
           </p>
         </div>
-        <div class="results">
-          <h2 class="unit-label">Mass (Kilograms/Pounds)</h2>
+        <div class="results light-theme">
+          <h2 class="light-label">Mass (Kilograms/Pounds)</h2>
           <p id="kilograms-pounds">
             0 kilograms = 0.000 pounds | 0 pounds = 0.000 kilograms
           </p>
