@@ -1,6 +1,7 @@
 html,
 body {
   margin: 0;
+  height: 100%;
   font-family: Inter, arial;
 }
 
@@ -24,6 +25,7 @@ body {
 
 h1 {
   margin: 1.5rem 3rem;
+  text-align: center;
 }
 
 h1,
@@ -40,8 +42,8 @@ h1,
 
 #mode-btn {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 1.5rem;
+  right: 1.5rem;
   padding: 5px 10px;
   border: 1px solid #6943ff;
   border-radius: 5px;
@@ -77,8 +79,8 @@ h1,
 #mode-btn:hover,
 #mode-btn:focus {
   transition: 300ms ease-in-out;
-  border: 1px solid black;
-  box-shadow: -5px 5px 5px black;
+  border: 1px solid #000000;
+  box-shadow: -5px 5px 5px #000000;
 }
 
 #results-section {
