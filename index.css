@@ -121,9 +121,11 @@ h1 {
 }
 
 /* Media queries */
-@media (max-size: 480px) {
+@media (max-width: 480px) {
   #mode-btn {
     position: fixed;
+    top: auto;
+    right: auto;
     bottom: 1.5rem;
   }
 }
